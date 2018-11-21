@@ -153,6 +153,7 @@
             <configuration>
               <artifactSet>
                 <includes>
+                  <include>io.sundr:*</include>
                   <include>io.fabric8:zjsonpatch</include>
                   <include>io.fabric8:kubernetes-model</include>
                   <include>io.fabric8:kubernetes-client</include>
