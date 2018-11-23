@@ -62,7 +62,7 @@
     <version.kubernetes-client>4.1.0</version.kubernetes-client>
     <version.servicecatalog-client>1.0.3</version.servicecatalog-client>
 
-    <version.sundrio>0.14.2</version.sundrio>
+    <version.sundrio>0.14.3</version.sundrio>
   </properties>
 
   <dependencies>
