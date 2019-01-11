@@ -62,7 +62,6 @@
     <version.kubernetes-client>4.1.0</version.kubernetes-client>
     <version.servicecatalog-client>1.0.3</version.servicecatalog-client>
 
-    <version.sundrio>0.14.4</version.sundrio>
   </properties>
 
   <dependencies>
@@ -118,23 +117,6 @@
       <optional>true</optional>
     </dependency>
 
-    <!-- Compile time dependencies -->
-    <dependency>
-      <groupId>io.sundr</groupId>
-      <artifactId>transform-annotations</artifactId>
-      <version>${version.sundrio}</version>
-      <scope>compile</scope>
-      <optional>true</optional>
-    </dependency>
-
-    <dependency>
-      <groupId>io.sundr</groupId>
-      <artifactId>builder-annotations</artifactId>
-      <version>${version.sundrio}</version>
-      <scope>compile</scope>
-      <optional>true</optional>
-    </dependency>
-
   </dependencies>
 
   <build>
@@ -153,7 +135,6 @@
             <configuration>
               <artifactSet>
                 <includes>
-                  <include>io.sundr:*</include>
                   <include>io.fabric8:zjsonpatch</include>
                   <include>io.fabric8:kubernetes-model</include>
                   <include>io.fabric8:kubernetes-client</include>
