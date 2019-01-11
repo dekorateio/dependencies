@@ -12,7 +12,7 @@
   <version>0.2-SNAPSHOT</version>
   <name>AP4K :: Dependencies Uberjar</name>
   <packaging>jar</packaging>
-  <url>http://fabric8.io/</url>
+  <url>http://ap4k.io/</url>
   <inceptionYear>2015</inceptionYear>
 
   <organization>
