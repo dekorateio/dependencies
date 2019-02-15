@@ -9,7 +9,7 @@
 
   <groupId>io.ap4k</groupId>
   <artifactId>ap4k-dependencies</artifactId>
-  <version>0.2-SNAPSHOT</version>
+  <version>0.2.2</version>
   <name>AP4K :: Dependencies Uberjar</name>
   <packaging>jar</packaging>
   <url>http://ap4k.io/</url>
