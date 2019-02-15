@@ -60,8 +60,8 @@
     <version.commons-compress>1.9</version.commons-compress>
     <version.jackson>2.9.7</version.jackson>
     <version.kubernetes-client>4.1.0</version.kubernetes-client>
-    <version.servicecatalog-client>1.0.3</version.servicecatalog-client>
-
+    <version.servicecatalog-client>1.0.4</version.servicecatalog-client>
+    <version.application-crd-client>1.0.6</version.application-crd-client>
   </properties>
 
   <dependencies>
@@ -97,6 +97,29 @@
       <optional>true</optional>
     </dependency>
 
+    <dependency>
+      <groupId>me.snowdrop</groupId>
+      <artifactId>servicecatalog-client</artifactId>
+      <version>${version.servicecatalog-client}</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>me.snowdrop</groupId>
+      <artifactId>application-crd-model</artifactId>
+      <version>${version.application-crd-client}</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+     </dependency>
+
+     <dependency>
+      <groupId>me.snowdrop</groupId>
+      <artifactId>application-crd-client</artifactId>
+      <version>${version.application-crd-client}</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+     </dependency>
     <!-- Compression -->
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -140,6 +163,9 @@
                   <include>io.fabric8:kubernetes-client</include>
                   <include>io.fabric8:openshift-client</include>
                   <include>me.snowdrop:servicecatalog-model</include>
+                  <include>me.snowdrop:servicecatalog-client</include>
+                  <include>me.snowdrop:application-crd-model</include>
+                  <include>me.snowdrop:application-crd-client</include>
 
                   <include>org.apache.commons:commons-compress</include>
                   <include>commons-codec:commons-codec</include>
@@ -170,6 +196,10 @@
                   <pattern>me.snowdrop.servicecatalog</pattern>
                   <shadedPattern>io.ap4k.deps.servicecatalog</shadedPattern>
                 </relocation>
+                 <relocation>
+                    <pattern>me.snowdrop.applicationcrd</pattern>
+                    <shadedPattern>io.ap4k.deps.applicationcrd</shadedPattern>
+                 </relocation>
                 <relocation>
                   <pattern>io.fabric8.zjsonpatch</pattern>
                   <shadedPattern>io.ap4k.deps.zjsonpatch</shadedPattern>
