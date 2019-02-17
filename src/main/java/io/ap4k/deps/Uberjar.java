@@ -15,7 +15,7 @@
  * 
 **/
 
-package io.apk.deps;
+package io.ap4k.deps;
 
 /**
  * This is just a shaded uberjar, with no real sources.
