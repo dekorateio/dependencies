@@ -62,13 +62,25 @@
     <version.kubernetes-client>4.1.0</version.kubernetes-client>
     <version.servicecatalog-client>1.0.7</version.servicecatalog-client>
     <version.application-crd-client>1.0.8</version.application-crd-client>
+    <version.slf4j>1.7.13</version.slf4j>
   </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.fabric8</groupId>
+        <artifactId>kubernetes-client-bom-with-deps</artifactId>
+        <version>${version.kubernetes-client}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies>
     <dependency>
       <groupId>io.fabric8</groupId>
       <artifactId>kubernetes-model</artifactId>
-      <version>${version.kubernetes-client}</version>
       <scope>compile</scope>
       <optional>true</optional>
     </dependency>
@@ -76,7 +88,6 @@
     <dependency>
       <groupId>io.fabric8</groupId>
       <artifactId>kubernetes-client</artifactId>
-      <version>${version.kubernetes-client}</version>
       <scope>compile</scope>
       <optional>true</optional>
     </dependency>
@@ -84,7 +95,6 @@
     <dependency>
       <groupId>io.fabric8</groupId>
       <artifactId>openshift-client</artifactId>
-      <version>${version.kubernetes-client}</version>
       <scope>compile</scope>
       <optional>true</optional>
     </dependency>
@@ -120,6 +130,13 @@
       <scope>compile</scope>
       <optional>true</optional>
      </dependency>
+
+     <dependency>
+       <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+       <version>${version.slf4j}</version>
+     </dependency>
+
     <!-- Compression -->
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -180,6 +197,8 @@
                   <include>com.fasterxml.jackson.core:jackson-databind</include>
                   <include>com.fasterxml.jackson.dataformat:jackson-dataformat-yaml</include>
                   <include>org.yaml:snakeyaml</include>
+                  <include>org.slf4j:slf4j-api</include>
+                  <include>org.slf4j:slf4j-simple</include>
                 </includes>
               </artifactSet>
               <relocations>
@@ -226,6 +245,10 @@
                 <relocation>
                   <pattern>javax.validation</pattern>
                   <shadedPattern>io.ap4k.deps.javax.validation</shadedPattern>
+                </relocation>
+                <relocation>
+                    <pattern>org.slf4j</pattern>
+                    <shadedPattern>io.ap4k.deps.org.slf4j</shadedPattern>
                 </relocation>
               </relocations>
               <transformers>
