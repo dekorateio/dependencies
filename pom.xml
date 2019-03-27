@@ -156,6 +156,13 @@
       <scope>compile</scope>
       <optional>true</optional>
     </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-properties</artifactId>
+      <version>2.9.7</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>    
   </dependencies>
 
   <build>
@@ -196,6 +203,7 @@
                   <include>com.fasterxml.jackson.core:jackson-core</include>
                   <include>com.fasterxml.jackson.core:jackson-databind</include>
                   <include>com.fasterxml.jackson.dataformat:jackson-dataformat-yaml</include>
+                  <include>com.fasterxml.jackson.dataformat:jackson-dataformat-properties</include>
                   <include>org.yaml:snakeyaml</include>
                   <include>org.slf4j:slf4j-api</include>
                   <include>org.slf4j:slf4j-simple</include>
