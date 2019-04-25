@@ -9,7 +9,7 @@
 
   <groupId>io.ap4k</groupId>
   <artifactId>ap4k-dependencies</artifactId>
-  <version>0.4-SNAPSHOT</version>
+  <version>0.4.1</version>
   <name>AP4K :: Dependencies Uberjar</name>
   <packaging>jar</packaging>
   <url>http://ap4k.io/</url>
@@ -59,9 +59,9 @@
     <version.commons-codec>1.10</version.commons-codec>
     <version.commons-compress>1.18</version.commons-compress>
     <version.jackson>2.9.7</version.jackson>
-    <version.kubernetes-client>4.2.0</version.kubernetes-client>
-    <version.servicecatalog-client>1.1.0</version.servicecatalog-client>
-    <version.application-crd-client>1.1.0</version.application-crd-client>
+    <version.kubernetes-client>4.2.2</version.kubernetes-client>
+    <version.servicecatalog-client>1.1.1</version.servicecatalog-client>
+    <version.application-crd-client>1.1.1</version.application-crd-client>
     <version.slf4j>1.7.13</version.slf4j>
   </properties>
 
