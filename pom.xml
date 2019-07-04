@@ -9,7 +9,7 @@
 
   <groupId>io.dekorate</groupId>
   <artifactId>dekorate-dependencies</artifactId>
-  <version>0.5.0</version>
+  <version>0.5-SNAPSHOT</version>
   <name>Dekorate :: Dependencies Uberjar</name>
   <packaging>jar</packaging>
   <url>http://dekorate.io/</url>
