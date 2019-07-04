@@ -1,4 +1,4 @@
-# AP4K Dependencies
+# Dekorate Dependencies
 A Kubernetes/Openshift model uberjar for use with annotation processors
 
 ## Rationale

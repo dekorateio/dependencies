@@ -15,7 +15,7 @@
  * 
 **/
 
-package io.ap4k.deps;
+package io.dekorate.deps;
 
 /**
  * This is just a shaded uberjar, with no real sources.
