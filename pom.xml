@@ -57,7 +57,7 @@
   <properties>
     <version.validation-api />
     <version.commons-codec>1.10</version.commons-codec>
-    <version.commons-compress>1.18</version.commons-compress>
+    <version.commons-compress>1.21</version.commons-compress>
     <version.jackson>2.9.7</version.jackson>
     <version.kubernetes-client>4.2.2</version.kubernetes-client>
     <version.servicecatalog-client>1.1.1</version.servicecatalog-client>
